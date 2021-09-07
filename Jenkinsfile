@@ -1,11 +1,5 @@
 pipeline {
-    agent any
-    tools { 
-        nodejs 'node14'
-    }
-    environment {
-        NODE_ENV = 'dev'
-    }
+    agent { docker { image 'mcr.microsoft.com/playwright:focal' } }
     stages {
         stage ('Test') {
             steps {
