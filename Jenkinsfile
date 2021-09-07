@@ -4,7 +4,8 @@ pipeline {
         stage ('Test') {
             steps {
                 sh 'export npm_config_cache=$(mktemp -d) && npm ci'
-                sh 'npm test'
+                sh 'npm test:success'
+                sh 'npm test:failure'
                 sh 'rm -rf $npm_config_cache'
             }
         }

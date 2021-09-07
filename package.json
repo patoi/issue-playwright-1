@@ -4,7 +4,8 @@
   "description": "Playwright runner issue with ES module on Ubuntu",
   "type": "module",
   "scripts": {
-    "test": "playwright test other/tests/user-acceptance-test"
+    "test:failure": "playwright test other/tests/user-acceptance-test",
+    "test:success": "playwright test"
   },
   "keywords": [
     "playwright",
