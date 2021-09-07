@@ -3,9 +3,9 @@ pipeline {
     stages {
         stage ('Test') {
             steps {
-                sh 'sudo chown -R 501:20 "/.npm"'
+                sh 'chown -R 501:20 "/.npm"'
                 sh 'npm ci'
-                sh 'sudo chown -R 501:20 "/.npm"'
+                sh 'chown -R 501:20 "/.npm"'
                 sh 'npm test'
             }
         }
