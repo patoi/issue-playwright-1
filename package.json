@@ -1,0 +1,20 @@
+{
+  "name": "issueplaywright-1",
+  "version": "1.0.0",
+  "description": "Playwright runner issue with ES module on Ubuntu",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "keywords": [
+    "playwright",
+    "test",
+    "issue",
+    "reproduction"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.14.1",
+    "playwright-firefox": "^1.14.1"
+  }
+}
