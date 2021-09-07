@@ -1,4 +1,4 @@
-# Reproduction Playwright test runner issue with ES module on Ubuntu
+# Playwright test runner issue reporduction
 
 Playwright runner doesn't execute test and give a "no tests found." message, if the path contains a hidden directory reference (.hidden-jenkins-directory).
 
