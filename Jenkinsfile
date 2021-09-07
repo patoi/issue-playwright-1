@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Test') {
             steps {
-                sh 'mkdir .npm && chown -R 501:20 .npm'
+                sh 'chown -R 501:20 .npm'
                 sh 'npm ci'
                 sh 'npm test'
             }
